@@ -3,53 +3,18 @@
 "Bg.jpg":
 {
 	"frame": {"x":1,"y":1,"w":1280,"h":720},
-	"rotated": true,
+	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":1280,"h":720},
 	"sourceSize": {"w":1280,"h":720}
-},
-"FireParticle1.png":
-{
-	"frame": {"x":235,"y":1283,"w":121,"h":128},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":3,"y":0,"w":121,"h":128},
-	"sourceSize": {"w":128,"h":128}
-},
-"FireParticle2.png":
-{
-	"frame": {"x":1,"y":1283,"w":126,"h":128},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":2,"y":0,"w":126,"h":128},
-	"sourceSize": {"w":128,"h":128}
-},
-"FireParticle3.png":
-{
-	"frame": {"x":365,"y":1283,"w":98,"h":128},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":15,"y":0,"w":98,"h":128},
-	"sourceSize": {"w":128,"h":128}
-},
-"FireParticle4.png":
-{
-	"frame": {"x":131,"y":1283,"w":102,"h":126},
-	"rotated": false,
-	"trimmed": true,
-	"spriteSourceSize": {"x":10,"y":0,"w":102,"h":126},
-	"sourceSize": {"w":128,"h":128}
 }},
-"animations": {
-	"FireParticle": ["FireParticle1.png","FireParticle2.png","FireParticle3.png","FireParticle4.png"]
-},
 "meta": {
 	"app": "https://www.codeandweb.com/texturepacker",
 	"version": "1.0",
 	"image": "FireScreen_00.webp",
 	"format": "RGBA8888",
-	"size": {"w":722,"h":1410},
+	"size": {"w":1282,"h":722},
 	"scale": "1",
-	"smartupdate": "$TexturePacker:SmartUpdate:e4aaf7644d649ab723d211d8450a184d:79933c1e03d6bef05529e5fc1af29957:f2c7d59c00b9f774ab5c72202aca3e85$"
+	"smartupdate": "$TexturePacker:SmartUpdate:21dc9d77d79b1e8979d161e354f2676e:8c9907623e098b1ccf53bdecb09ac442:f2c7d59c00b9f774ab5c72202aca3e85$"
 }
 }

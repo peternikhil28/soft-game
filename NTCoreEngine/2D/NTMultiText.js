@@ -172,7 +172,7 @@ export default class NTMultiText extends NTContainer
         let totalWidth = 0;
         for(let index=0; index<this._items.length; index++)
         {
-            if(index === 0 || this._items[index].newLine)
+            if(index === 0 || this._items[index].newLine || totalWidth >= this.display._width)
             {
                 totalWidth = 0;
                 this._containerList.push(new NTContainer());
@@ -189,8 +189,8 @@ export default class NTMultiText extends NTContainer
         for(let index=0; index<this._containerList.length; index++)
         {
             this._containerList[index].position.x = -this._containerList[index].display.getBounds().width/2;
-            this._containerList[index].position.y =  this._lineHieght !== undefined ? this._lineHieght/2 + totalHeight : this._containerList[index].display.height/2 + totalHeight;
-            totalHeight += this._lineHieght !== undefined ? this._lineHieght : this._containerList[index].display.height;
+            this._containerList[index].position.y =  this._lineHieght ? this._lineHieght/2 + totalHeight : this._containerList[index].display.height/2 + totalHeight;
+            totalHeight += this._lineHieght ? this._lineHieght : this._containerList[index].display.height;
             this.addChild(this._containerList[index]);
         }
 

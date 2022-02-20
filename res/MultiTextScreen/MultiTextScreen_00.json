@@ -56,7 +56,7 @@
 	"spriteSourceSize": {"x":0,"y":0,"w":100,"h":62},
 	"sourceSize": {"w":100,"h":62}
 },
-"Gem8.png":
+"Gem7.png":
 {
 	"frame": {"x":1,"y":1283,"w":120,"h":166},
 	"rotated": true,
@@ -65,7 +65,7 @@
 	"sourceSize": {"w":120,"h":166}
 }},
 "animations": {
-	"Gem": ["Gem1.png","Gem2.png","Gem3.png","Gem4.png","Gem5.png","Gem6.png","Gem8.png"]
+	"Gem": ["Gem1.png","Gem2.png","Gem3.png","Gem4.png","Gem5.png","Gem6.png","Gem7.png"]
 },
 "meta": {
 	"app": "https://www.codeandweb.com/texturepacker",

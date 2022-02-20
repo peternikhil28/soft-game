@@ -11,7 +11,7 @@ import SubScreen from "./SubScreen";
     {
         super(assetFolder, layoutName);
 
-        this._textStyle = "fill=0xffffff; fontWeight=bold; stroke=#000000; strokeThickness=5; fontFamily=Arial;";
+        this._textStyle = "fill=0xffffff fontWeight=bold stroke=#000000 strokeThickness=5 fontFamily=Arial";
     }
 
     onObjectCreated(object, objectData)
@@ -33,7 +33,7 @@ import SubScreen from "./SubScreen";
         for(let count=0; count<length; count++)
         {
             if(NTUtils.getRandomInt(0, 1))
-                text += "<label  " + this._textStyle + "fontSize="+ NTUtils.getRandomInt(10, 40) + ";>" + this.getRandomText() + "</label>";
+                text += "<label  " + this._textStyle + " fontSize="+ NTUtils.getRandomInt(10, 40) + ">" + this.getRandomText() + "</label>";
             else
                 text += "<img src=Gem" + NTUtils.getRandomInt(1, 7) + ">"
         }
