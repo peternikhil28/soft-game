@@ -11,6 +11,18 @@ import MultiTextScreen from "./SubScreen/MultiTextScreen";
 
 export default class MenuScreen extends NTGameScreen
 {
+    constructor(assetPath, layoutName)
+    {
+        super(assetPath, layoutName);
+
+        this._buttonList = [];
+    }
+
+    onObjectCreated(object, objectData)
+    {
+        this._buttonList.push(object);
+    }
+
     onButtonClicked(target)
     {
         let screen;
@@ -29,6 +41,8 @@ export default class MenuScreen extends NTGameScreen
                 screen = new FireScreen("res/FireScreen/", "FireScreen");
                 break;
         }
+
+        this._buttonList.forEach(button => button.touchEnabled = false);
 
         NTUtils.fullScreen();
 

@@ -8,20 +8,9 @@ import MenuScreen from "./MenuScreen";
 
  export default class Hud extends NTGameScreen
 {
-    onObjectCreated(object, objectData)
+    onButtonClicked(target)
     {
-        switch (objectData.name)
-        {
-            case "btnBack":
-                object.display.buttonMode = true;
-                object.display.interactive = true;
-                object.display.on('pointerup', this.onBackClicked.bind(this));
-                break;
-        }
-    }
-
-    onBackClicked()
-    {
+        target.touchEnabled = false;
         NTEngine.screenManager.loadNewScreen( new MenuScreen("res/MenuScreen/", "MenuScreen"));
     }
 }

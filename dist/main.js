@@ -69415,19 +69415,9 @@ var Hud = /*#__PURE__*/function (_NTGameScreen) {
   }
 
   _createClass(Hud, [{
-    key: "onObjectCreated",
-    value: function onObjectCreated(object, objectData) {
-      switch (objectData.name) {
-        case "btnBack":
-          object.display.buttonMode = true;
-          object.display.interactive = true;
-          object.display.on('pointerup', this.onBackClicked.bind(this));
-          break;
-      }
-    }
-  }, {
-    key: "onBackClicked",
-    value: function onBackClicked() {
+    key: "onButtonClicked",
+    value: function onButtonClicked(target) {
+      target.touchEnabled = false;
       NTCoreEngine_NTEngine__WEBPACK_IMPORTED_MODULE_0__["default"].screenManager.loadNewScreen(new _MenuScreen__WEBPACK_IMPORTED_MODULE_2__["default"]("res/MenuScreen/", "MenuScreen"));
     }
   }]);
@@ -69562,13 +69552,22 @@ var MenuScreen = /*#__PURE__*/function (_NTGameScreen) {
 
   var _super = _createSuper(MenuScreen);
 
-  function MenuScreen() {
+  function MenuScreen(assetPath, layoutName) {
+    var _this;
+
     _classCallCheck(this, MenuScreen);
 
-    return _super.apply(this, arguments);
+    _this = _super.call(this, assetPath, layoutName);
+    _this._buttonList = [];
+    return _this;
   }
 
   _createClass(MenuScreen, [{
+    key: "onObjectCreated",
+    value: function onObjectCreated(object, objectData) {
+      this._buttonList.push(object);
+    }
+  }, {
     key: "onButtonClicked",
     value: function onButtonClicked(target) {
       var screen;
@@ -69586,6 +69585,10 @@ var MenuScreen = /*#__PURE__*/function (_NTGameScreen) {
           screen = new _SubScreen_FireScreen_FireScreen__WEBPACK_IMPORTED_MODULE_4__["default"]("res/FireScreen/", "FireScreen");
           break;
       }
+
+      this._buttonList.forEach(function (button) {
+        return button.touchEnabled = false;
+      });
 
       NTCoreEngine_NTUtils__WEBPACK_IMPORTED_MODULE_2__["default"].fullScreen();
       NTCoreEngine_NTEngine__WEBPACK_IMPORTED_MODULE_0__["default"].screenManager.loadNewScreen(screen);

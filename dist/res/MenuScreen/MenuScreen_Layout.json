@@ -3,8 +3,8 @@
 
  "objects" : [
   {"name": "Bg", "type": "Sprite", "x": 640, "y": 360, "w": 1280, "h": 720},
-  {"name": "btnCardGame", "type": "Button", "x": 640, "y": 160, "w": 300, "h": 109},
-  {"name": "btnMultiText", "type": "Button", "x": 640, "y": 360, "w": 300, "h": 109},
-  {"name": "btnFire", "type": "Button", "x": 640, "y": 560, "w": 300, "h": 109}
+  {"name": "btnCardGame", "type": "ButtonUI", "x": 640, "y": 160, "w": 300, "h": 109},
+  {"name": "btnMultiText", "type": "ButtonUI", "x": 640, "y": 360, "w": 300, "h": 109},
+  {"name": "btnFire", "type": "ButtonUI", "x": 640, "y": 560, "w": 300, "h": 109}
  ]
 }
