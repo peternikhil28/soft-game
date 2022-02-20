@@ -1,0 +1,8 @@
+{
+ "assetName" : "MultiTextScreen",
+
+ "objects" : [
+  {"name": "Bg", "type": "Sprite", "x": 640, "y": 360, "w": 1280, "h": 720},
+  {"name": "txtMulti", "type": "MultiText", "x": 640, "y": 360, "w": 500, "h": 300}
+ ]
+}

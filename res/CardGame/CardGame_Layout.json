@@ -1,0 +1,9 @@
+{
+ "assetName" : "CardGame",
+
+ "objects" : [
+  {"name": "Bg", "type": "Sprite", "x": 640, "y": 360, "w": 1280, "h": 720},
+  {"name": "Card", "type": "Holder1", "x": 280, "y": 260, "w": 50, "h": 70},
+  {"name": "Card", "type": "Holder2", "x": 1000, "y": 460, "w": 50, "h": 70}
+ ]
+}

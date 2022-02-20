@@ -1,0 +1,7 @@
+{
+ "assetName" : "Hud",
+
+ "objects" : [
+  {"name": "btnBack", "type": "Sprite", "x": 100, "y": 100, "w": 100, "h": 100}
+ ]
+}

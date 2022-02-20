@@ -1,0 +1,43 @@
+{
+  "name": "metaverse1",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --open  --mode=development",
+    "build:dev": "webpack --mode=development",
+    "build:prod": "webpack --mode=production",
+    "dev-server-mobile": "webpack-dev-server --config webpack.config.js --platform=mobile"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.16.12",
+    "@babel/preset-env": "^7.16.11",
+    "babel-loader": "^8.2.2",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^6.1.1",
+    "html-webpack-plugin": "^4.5.0",
+    "ip": "^1.1.5",
+    "javascript-obfuscator": "^2.15.5",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-obfuscator": "^2.6.0"
+  },
+  "dependencies": {
+    "@tweenjs/tween.js": "^17.3.0",
+    "axios": "^0.19.2",
+    "howler": "^2.2.0",
+    "html2canvas": "^1.0.0-rc.3",
+    "ip": "^1.1.5",
+    "pixi-filters": "^3.0.3",
+    "pixi-particles": "^4.3.0",
+    "pixi-projection": "^0.3.11",
+    "pixi-spine": "^2.1.4",
+    "pixi.js": "^5.2.0",
+    "proton-engine": "^4.1.5",
+    "revolt-fx": "^1.1.1",
+    "stats.js.fps": "0.0.1"
+  }
+}

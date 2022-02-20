@@ -1,0 +1,8 @@
+{
+    "compilerOptions": {
+      "paths": {
+        "NTCoreEngine/*": ["./NTCoreEngine/*"]
+      }
+    },
+    "exclude": ["node_modules"]
+  }

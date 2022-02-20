@@ -1,0 +1,19 @@
+{
+  "resList": [
+
+    "res/MenuScreen/MenuScreen_00.json",
+    "res/MenuScreen/MenuScreen_Layout.json",
+    
+    "res/MultiTextScreen/MultiTextScreen_00.json",
+    "res/MultiTextScreen/MultiTextScreen_Layout.json",
+
+    "res/FireScreen/FireParticles_00.json",
+    "res/FireScreen/FireScreen_Layout.json",
+
+    "res/CardGame/CardGame_00.json",
+    "res/CardGame/CardGame_Layout.json",
+
+    "res/Hud/Hud_00.json",
+    "res/Hud/Hud_Layout.json"
+  ]
+}
