@@ -26,17 +26,14 @@ export default class NTGameScene extends NTContainer
 
         NTEngine.renderer = this._renderer;
 
-        if(!NTEngine.isMobile)
-        {
-            this._wrapper = document.createElement('div');
-            this._wrapper.setAttribute("style", "width:" + NTEngine.screenWidth + "px; height:" + NTEngine.screenHeight + "px; position: fixed; left:50%;top:0; overflow: hidden; transform-origin: left top;");
-            this._wrapper.appendChild(this._renderer.view);
-            document.body.appendChild(this._wrapper);
+        this._wrapper = document.createElement('div');
+        this._wrapper.setAttribute("style", "width:" + NTEngine.screenWidth + "px; height:" + NTEngine.screenHeight + "px; position: fixed; left:50%;top:0; overflow: hidden; transform-origin: left top;");
+        this._wrapper.appendChild(this._renderer.view);
+        document.body.appendChild(this._wrapper);
 
-            window.addEventListener( 'resize', this.onWindowResize.bind(this), false );
+        window.addEventListener( 'resize', this.onWindowResize.bind(this), false );
 
-            this.onWindowResize();
-        }
+        this.onWindowResize();
 
         let style = "body { margin: 0; background-color: black; } canvas { padding-left: 0; padding-right: 0; margin-left: auto; margin-right: auto; display: block; width : 100%; } #viewport { width:1280px; height:720px; position: fixed; left:50%;top:0; overflow: hidden; transform-origin: left top; }";
         let css = document.createElement('style');

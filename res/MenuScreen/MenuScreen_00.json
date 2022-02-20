@@ -2,7 +2,7 @@
 
 "btnCardGame00.png":
 {
-	"frame": {"x":1283,"y":1,"w":300,"h":109},
+	"frame": {"x":1,"y":1,"w":300,"h":109},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":300,"h":109},
@@ -10,15 +10,15 @@
 },
 "btnCardGame01.png":
 {
-	"frame": {"x":1585,"y":1,"w":300,"h":109},
-	"rotated": true,
+	"frame": {"x":1,"y":112,"w":300,"h":109},
+	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":300,"h":109},
 	"sourceSize": {"w":300,"h":109}
 },
 "btnCardGame02.png":
 {
-	"frame": {"x":1696,"y":1,"w":300,"h":109},
+	"frame": {"x":303,"y":1,"w":300,"h":109},
 	"rotated": true,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":300,"h":109},
@@ -26,7 +26,7 @@
 },
 "btnFire00.png":
 {
-	"frame": {"x":1283,"y":112,"w":300,"h":109},
+	"frame": {"x":1,"y":223,"w":300,"h":109},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":300,"h":109},
@@ -34,7 +34,7 @@
 },
 "btnFire01.png":
 {
-	"frame": {"x":1283,"y":223,"w":300,"h":109},
+	"frame": {"x":1,"y":334,"w":300,"h":109},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":300,"h":109},
@@ -42,15 +42,15 @@
 },
 "btnFire02.png":
 {
-	"frame": {"x":1283,"y":334,"w":300,"h":109},
-	"rotated": true,
+	"frame": {"x":1,"y":445,"w":300,"h":109},
+	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":300,"h":109},
 	"sourceSize": {"w":300,"h":109}
 },
 "btnMultiText00.png":
 {
-	"frame": {"x":1394,"y":334,"w":300,"h":109},
+	"frame": {"x":303,"y":303,"w":300,"h":109},
 	"rotated": true,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":300,"h":109},
@@ -58,7 +58,7 @@
 },
 "btnMultiText01.png":
 {
-	"frame": {"x":1505,"y":334,"w":300,"h":109},
+	"frame": {"x":1,"y":556,"w":300,"h":109},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":300,"h":109},
@@ -66,19 +66,11 @@
 },
 "btnMultiText02.png":
 {
-	"frame": {"x":1505,"y":445,"w":300,"h":109},
+	"frame": {"x":1,"y":667,"w":300,"h":109},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":300,"h":109},
 	"sourceSize": {"w":300,"h":109}
-},
-"Bg.jpg":
-{
-	"frame": {"x":1,"y":1,"w":1280,"h":720},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":1280,"h":720},
-	"sourceSize": {"w":1280,"h":720}
 }},
 "animations": {
 	"btnCardGame": ["btnCardGame00.png","btnCardGame01.png","btnCardGame02.png"],
@@ -88,10 +80,10 @@
 "meta": {
 	"app": "https://www.codeandweb.com/texturepacker",
 	"version": "1.0",
-	"image": "MenuScreen_00.webp",
+	"image": "MenuScreen_00.png",
 	"format": "RGBA8888",
-	"size": {"w":1806,"h":722},
+	"size": {"w":413,"h":777},
 	"scale": "1",
-	"smartupdate": "$TexturePacker:SmartUpdate:108fa0861f693fc044f5627eb07874f9:194e41a0e2942d0d0af169e5453a9f1e:562f869326b65cd2ada45acf9e32c026$"
+	"smartupdate": "$TexturePacker:SmartUpdate:fc5eb873c12e73588f7a24a477e0e021:fbdc7417c5e93cd39ba27ae5ba4c5f8a:e12c931f7bea52dfdcd953372ebe1e07$"
 }
 }

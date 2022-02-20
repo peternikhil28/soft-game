@@ -2698,19 +2698,15 @@ var NTGameScene = /*#__PURE__*/function (_NTContainer) {
         transparent: true
       });
       _NTEngine__WEBPACK_IMPORTED_MODULE_2__["default"].renderer = this._renderer;
+      this._wrapper = document.createElement('div');
 
-      if (!_NTEngine__WEBPACK_IMPORTED_MODULE_2__["default"].isMobile) {
-        this._wrapper = document.createElement('div');
+      this._wrapper.setAttribute("style", "width:" + _NTEngine__WEBPACK_IMPORTED_MODULE_2__["default"].screenWidth + "px; height:" + _NTEngine__WEBPACK_IMPORTED_MODULE_2__["default"].screenHeight + "px; position: fixed; left:50%;top:0; overflow: hidden; transform-origin: left top;");
 
-        this._wrapper.setAttribute("style", "width:" + _NTEngine__WEBPACK_IMPORTED_MODULE_2__["default"].screenWidth + "px; height:" + _NTEngine__WEBPACK_IMPORTED_MODULE_2__["default"].screenHeight + "px; position: fixed; left:50%;top:0; overflow: hidden; transform-origin: left top;");
+      this._wrapper.appendChild(this._renderer.view);
 
-        this._wrapper.appendChild(this._renderer.view);
-
-        document.body.appendChild(this._wrapper);
-        window.addEventListener('resize', this.onWindowResize.bind(this), false);
-        this.onWindowResize();
-      }
-
+      document.body.appendChild(this._wrapper);
+      window.addEventListener('resize', this.onWindowResize.bind(this), false);
+      this.onWindowResize();
       var style = "body { margin: 0; background-color: black; } canvas { padding-left: 0; padding-right: 0; margin-left: auto; margin-right: auto; display: block; width : 100%; } #viewport { width:1280px; height:720px; position: fixed; left:50%;top:0; overflow: hidden; transform-origin: left top; }";
       var css = document.createElement('style');
       css.type = 'text/css';
@@ -70181,7 +70177,7 @@ window.addEventListener('blur', function () {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-var loadRes = ["res/LoadingScreen/LoadingScreen_Layout.json", "res/LoadingScreen/LoadingScreen_00.json", "res/resource.json"];
+var loadRes = ["res/LoadingScreen/LoadingScreen_Layout.json", "res/LoadingScreen/LoadingScreen_00.json", "res/LoadingScreen/LoadingScreen_01.json", "res/resource.json"];
 /* harmony default export */ __webpack_exports__["default"] = (loadRes);
 
 /***/ })

@@ -11,10 +11,10 @@
 "meta": {
 	"app": "https://www.codeandweb.com/texturepacker",
 	"version": "1.0",
-	"image": "FireScreen_00.jpg",
+	"image": "LoadingScreen_01.jpg",
 	"format": "RGB888",
 	"size": {"w":1282,"h":722},
 	"scale": "1",
-	"smartupdate": "$TexturePacker:SmartUpdate:cde02012f232f4f09cc2a21023c023a6:8c9907623e098b1ccf53bdecb09ac442:06ceddbc36877ec8ffd101c10fd54058$"
+	"smartupdate": "$TexturePacker:SmartUpdate:5cae26396cfe7bd788abff6a47dc7ee5:699c480264e1dd9d7172255367477126:168b33e4f0fa024ba9f537fd689edc5b$"
 }
 }

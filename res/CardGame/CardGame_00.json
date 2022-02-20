@@ -1,16 +1,8 @@
 {"frames": {
 
-"Bg.jpg":
-{
-	"frame": {"x":1,"y":1,"w":1280,"h":720},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":1280,"h":720},
-	"sourceSize": {"w":1280,"h":720}
-},
 "Card.png":
 {
-	"frame": {"x":1283,"y":1,"w":50,"h":70},
+	"frame": {"x":1,"y":1,"w":50,"h":70},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":50,"h":70},
@@ -19,10 +11,10 @@
 "meta": {
 	"app": "https://www.codeandweb.com/texturepacker",
 	"version": "1.0",
-	"image": "CardGame_00.webp",
+	"image": "CardGame_00.png",
 	"format": "RGBA8888",
-	"size": {"w":1334,"h":722},
+	"size": {"w":52,"h":72},
 	"scale": "1",
-	"smartupdate": "$TexturePacker:SmartUpdate:6ed138c68e178e3b3fcfd1c3eac83488:c9539efa41eb29b30637c9d90bf9198b:30a2808afbe0746aa3795b4157251a62$"
+	"smartupdate": "$TexturePacker:SmartUpdate:98d4a736f385c9a97cb8c87554548180:fff8118e0e87fcfd750ea6e6e9592483:18876c7addd7afc97560a0474edc5400$"
 }
 }
