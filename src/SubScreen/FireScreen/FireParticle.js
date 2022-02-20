@@ -8,7 +8,7 @@ import NTEngine from "NTCoreEngine/NTEngine";
 import NTUtils from "NTCoreEngine/NTUtils";
 import Proton from "proton-engine";
 
-// -- Max 10 Images will be on Screen. Every 0.5 sec an Image is created and has life up to 5 sec.
+// -- Max 10 Images will be on Screen. Every 0.1 sec an Image is created and has life up to less than 1 sec.
 // -- Better fire effect can be achieved from increasing images.
 
 export default class FireParticle extends NTParticleContainer
@@ -45,16 +45,16 @@ export default class FireParticle extends NTParticleContainer
     {
         let fireEmitter = new Proton.Emitter();
 
-        fireEmitter.rate = new Proton.Rate(1, 0.5);
+        fireEmitter.rate = new Proton.Rate(2, 0.1);
 
         fireEmitter.addInitialize(new Proton.Body({ name: 'FIRE' }));
 
-        fireEmitter.addInitialize(new Proton.Life(5));
-        fireEmitter.addInitialize(new Proton.V(new Proton.Span(0.1, 0.3), new Proton.Span(0, 3, true), 'polar'));
+        fireEmitter.addInitialize(new Proton.Life(new Proton.Span(0.8, 1)));
+        fireEmitter.addInitialize(new Proton.V(new Proton.Span(2.1, 2.3), new Proton.Span(0, 10, true), 'polar'));
 
         fireEmitter.addBehaviour(new Proton.Color("#f9f509", "#ff6919", Infinity, Proton.easeOutBack));
         fireEmitter.addBehaviour(new Proton.Alpha(0, 0.5, Infinity, Proton.easeOutBack));
-        fireEmitter.addBehaviour(new Proton.Scale(0.3, Proton.getSpan(1, 1.5)));
+        fireEmitter.addBehaviour(new Proton.Scale(1, Proton.getSpan(0.3, 0.5)));
 
         fireEmitter.p.x = NTEngine.screenWidth / 2;
         fireEmitter.p.y = NTEngine.screenHeight - 210;
@@ -64,7 +64,7 @@ export default class FireParticle extends NTParticleContainer
 
         this._proton.addEventListener(Proton.PARTICLE_UPDATE, function(particle) {
 
-            if(particle.age > 1 && particle.fadeOut !== true)
+            if(particle.age > 0.1 && particle.fadeOut !== true)
             {
                 particle.fadeOut = true;
                 particle.removeBehaviour(particle.behaviours.filter(x=> x.name === "Alpha")[0]);

@@ -1,0 +1,28 @@
+{"frames": {
+
+"Bg.jpg":
+{
+	"frame": {"x":1,"y":1,"w":1280,"h":720},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":1280,"h":720},
+	"sourceSize": {"w":1280,"h":720}
+},
+"LoadingIcon.png":
+{
+	"frame": {"x":1283,"y":1,"w":300,"h":300},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":300,"h":300},
+	"sourceSize": {"w":300,"h":300}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "LoadingScreen_00.webp",
+	"format": "RGBA8888",
+	"size": {"w":1584,"h":722},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:5811d2ca13febfb0a1352180125b3dd3:0a1f3bad4a3a582cf18eff829afcb426:e531c439f7e69b74e4cb96343b7b5186$"
+}
+}

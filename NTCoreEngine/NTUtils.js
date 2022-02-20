@@ -461,6 +461,20 @@ let NTUtils ={
         }
     },
 
+    fullScreen()
+    {
+        if ((document.fullScreenElement && document.fullScreenElement !== null) ||
+            (!document.mozFullScreen && !document.webkitIsFullScreen)) {
+            if (document.documentElement.requestFullScreen) {
+                document.documentElement.requestFullScreen();
+            } else if (document.documentElement.mozRequestFullScreen) {
+                document.documentElement.mozRequestFullScreen();
+            } else if (document.documentElement.webkitRequestFullScreen) {
+                document.documentElement.webkitRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT);
+            }
+        }
+    },
+
     rgbToHex(r, g, b)
     {
         return "0x" + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1);

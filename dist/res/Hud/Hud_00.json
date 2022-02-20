@@ -1,0 +1,20 @@
+{"frames": {
+
+"btnBack.png":
+{
+	"frame": {"x":0,"y":0,"w":100,"h":100},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":100,"h":100},
+	"sourceSize": {"w":100,"h":100}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "Hud_00.png",
+	"format": "RGBA8888",
+	"size": {"w":100,"h":100},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:0a866b270801e40033096d0b69198094:9bfebb9c55b19315b65bc5b29ec214fa:72c46869e5d3e28a5c608f0f8da9758f$"
+}
+}

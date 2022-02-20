@@ -10,8 +10,6 @@ export default class NTParticleContainer extends NTContainer
     {
         super();
 
-        this._ntObject = new PIXI.ParticleContainer();
-
         this.init();
 
         NTEngine.ticker.add(this.render, this);

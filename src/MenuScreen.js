@@ -3,7 +3,8 @@
  */
 
 import NTEngine from "NTCoreEngine/NTEngine";
-import NTGameScreen from "NTCoreEngine/NTGameScreen";;
+import NTGameScreen from "NTCoreEngine/NTGameScreen";import NTUtils from "NTCoreEngine/NTUtils";
+;
 import CardGame from "./SubScreen/CardGame";
 import FireScreen from "./SubScreen/FireScreen/FireScreen";
 import MultiTextScreen from "./SubScreen/MultiTextScreen";
@@ -28,6 +29,8 @@ export default class MenuScreen extends NTGameScreen
                 screen = new FireScreen("res/FireScreen/", "FireScreen");
                 break;
         }
+
+        NTUtils.fullScreen();
 
         NTEngine.screenManager.loadNewScreen(screen);
     }
